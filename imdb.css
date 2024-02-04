@@ -1,0 +1,379 @@
+/* Resetting box-sizing to border-box for all elements */
+* {
+box-sizing: border-box;
+}
+/* Setting the font family for the entire body */
+body {
+font-family:fantasy;
+}
+
+/* Style the header */
+header {
+width: 100%;
+background-color: black;
+padding: 40px;
+display: flex; /* Use flexbox for easier alignment */
+align-items: center; /* Center items vertically */
+}
+
+/* Styling for the logo in the header */
+header img {
+width: 100px;
+height: 100px;
+margin-right: 20px; /* Add margin for spacing */
+}
+.upper-row{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Styling for the search bar */
+.relative{
+    position: relative;
+    bottom: 50px;
+    width: 100%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Styling for the input field within the search bar */
+.relative input[type="text"]{
+    width: 60%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    /* border: 1px solid #ccc; */
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+/* Styling for the absolute-positioned items in the header */
+div.absolute {
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    /* border: 5px solid #ccc; */
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+/* Styling for the items within the absolute-positioned div in the header */
+.item{
+    color: white;
+    padding: 10px;
+    font-family: fantasy;
+    border-left: 3px solid rgb(255, 255, 255,0.8);
+    border-right: 3px solid rgb(255, 255, 255,0.8);
+    font-size: 16px;
+}
+
+/* Styling for a specific item in the header */
+div.absolute .item1{
+    color: rgb(255, 198, 43);
+    padding-top: 20px;
+    margin-right: 50px;
+    font-size: 16px;
+}
+
+select{
+    padding: 10px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black !important;
+    border-radius: 4px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 60%;
+    width: 10%;
+}
+    
+/* Styling for the magnifying glass logo */
+.Magnifying_Glass_logo{
+    background-image: linear-gradient( 135deg, #FCCF31 10%, #F55555 100%);
+   color: white;
+   border: none;
+   border-radius: 10px;
+   padding: 10px 10px;
+   width: 100px;
+   text-align: center;
+   font-size: 15px;
+   position: absolute;
+   left: 70%;
+   display: inline-block;
+   margin: 7px 9px;
+   }
+
+/* Styling for the sign-in button */
+.SignBtn{
+    background-image: linear-gradient( 135deg, #FCCF31 10%, #F55555 100%);
+    border: none;
+    color: black;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    width: 20%;
+    position: absolute;
+    top: 125px;
+    left: 140%;
+}
+
+
+/* End Header */
+
+/* Section Side right */
+
+.row{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+/* Styling for the section on the left */
+.right-side{
+    width: 40%;
+    height: 100%;
+}
+
+/* Styling for the section on the right */
+.left-side{
+    width: 60%;
+    height: 100%;
+    
+}
+
+/* Styling for the content section */
+section{
+    background-color: #666;
+    text-align: left;
+    font-size: 35px;
+    color: white;
+    width: 100%;  
+    height:100%;
+}
+
+/* Styling for the relative section within the left section */
+.relative-Section{
+    position: relative;
+    left: 5%;
+    bottom: 2%;
+    width: 55%;
+    height: 15%;
+    margin: 2% 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1.5vw;
+}
+
+/* Styling for the absolute-positioned items within the left section */
+div.absolute-Section {
+    position: absolute;
+    top: 70%;
+    left: 2%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+/* The text indise the left section */
+/* Styling for the text inside the left section */
+.item-S{ 
+    color: white;
+    padding: 10px;
+    font-family: fantasy;
+    /* border-left: 1px solid rgb(255, 255, 255,0.8); */
+    /* border-right: 1px solid rgb(255, 255, 255,0.8); */
+    font-size: 16px;
+}
+
+/* End the text indise the left section */
+
+
+/* Start relative aritecler section*/
+/* Styling for the relative article section */
+.relative-article{
+    position: absolute;
+    background-color: #666;
+    width: 59.6%;
+    height: 85%; /* Set height to 50% of the viewport height */
+    overflow: hidden; /* Ensure no overflow */
+}
+
+/* Styling for the absolute-positioned video */
+.absolute-vidoe{
+    position: absolute;
+    left: 30.5%;
+    width: 69.5%;
+    height: 70%;
+}
+
+/* Styling for the image within the article section */
+.ImgStyle{
+    position: absolute;
+    height: 70%;
+    width: 30%;
+}
+
+/* Styling for the section overview */
+.Section-overiew{
+    background-color: #E4E4E1;
+    background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
+    background-blend-mode: normal, multiply;
+    position: absolute;
+    width: 100%;
+    top: 70%;
+    height: 30%;
+    display: inline-block;
+}
+
+/* Styling for the absolute-positioned items within the section overview */
+.absolute-Section-overiew{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Styling for the paragraph inside the section overview */
+.p1-overiew{
+    position: absolute;
+    left:5%;
+    font-size: 1.3vw;
+    text-align: left;
+    color: black;
+}
+
+/* Styling for the button within the section overview */
+.button {
+    position: absolute;
+    top: 70%;
+    left:5%;
+    background-color: #76a2f4; /* light blue */
+    border: none;
+    color: white;
+    padding: 1% 2%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1vw;
+    margin: 2% 1%;
+    cursor: pointer;
+    border-radius: 4%;
+    
+    
+}
+
+/* Additional styling for the button with 50% width */
+.button2 {
+    width: 50%;
+}
+
+/* Styling for the list items within the section overview */
+ul{
+    position: absolute;
+    left:5%;
+    top:40%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 0.9vw;
+    color: black;
+}
+
+/* Styling for the span elements */ 
+span{
+    color: black;
+}
+
+/* Styling for individual list items */
+li{
+    color: #76a2f4;
+}
+
+/*END Section left*/
+
+/* Section right */
+/* Styling for the right section */
+.column {
+    width: 39.7%;
+    height: 104.8%;
+    background-image: linear-gradient(to top, rgb(193, 193, 193) 0%, rgb(132, 132, 132) 1%, #b3b3b3 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+    text-align: center;
+    font-size: 2vw;
+    color: white;
+    position: absolute;
+    border: 1px solid black;
+}
+
+/* Styling for the heading within the right section */
+.column h2 {
+    background: linear-gradient(to right, #780206, #061161);
+    background-clip: text;
+    color: transparent;
+}
+
+/* Additional styling for the relative article section */
+.relative-article{
+    font-size: 40px;
+}
+
+/* Styling for the rate section */
+.rate{
+    position: relative;
+    left: 40%
+    /* margin:10px; */
+    /* border-right: 3px solid rgb(255, 255, 255,0.8); */
+}
+ 
+/* Styling for the rate button */
+.rateBtn{
+    position: absolute;
+    background-color: #666;
+    border: none;
+    color: black;
+    padding: 1.5% 3%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size:1.5vw;
+    margin: 2% 1%;
+    cursor: pointer;
+    border-radius: 8%;
+}
+
+/* Hover effect for the rate button */
+.rateBtn:hover{
+background-color: #ccc;
+}
+
+/* Styling for the views section */
+.views{
+    position: absolute;
+    top: 80%;
+    right: 10%;
+    font-size: 1vw;
+    font-family: monospace;
+}
+ 
+/* Styling for the text within the fiveThings section */
+.fiveThings-text{
+    position: absolute;
+    top: 25%;
+    right: 50%;
+    width: 90%;
+    font-size: 1vw;
+    text-align:center;
+}
+
+/* Styling for individual list items within the fiveThings section */
+.fiveThings-text li{
+    color: black;
+    font-size: 100%;
+}
+
+
